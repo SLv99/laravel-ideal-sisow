@@ -19,7 +19,7 @@ class LaravelSisowServiceProvider extends ServiceProvider {
 	public function boot()
 	{
 
-		$this->package('vjanssens/laravel-sisow');
+		$this->package('slv99/laravel-sisow');
 
 		$app = $this->app;
 		
