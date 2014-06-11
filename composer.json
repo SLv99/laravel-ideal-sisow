@@ -1,5 +1,5 @@
 {
-    "name": "vjanssens/laravel-sisow",
+    "name": "slv99/laravel-sisow",
     "description": "Easy iDeal payments via Sisow Payment Service Provider.",
     "keywords": ["laravel", "ideal", "payment", "laravel 4"],
     "license": "MIT",
