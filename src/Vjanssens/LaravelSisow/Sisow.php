@@ -90,7 +90,7 @@ class Sisow
 		$this->api->issuerId          = $args['issuer_id'];
 
 		$this->api->testmode          = $this->testmode;
-		$this->api->description       = (isset($args['Description']) 	? $args['Description'] 		: $this->config->get('laravel-sisow::default.description'));
+		$this->api->description       = (isset($args['description']) 	? $args['description'] 		: $this->config->get('laravel-sisow::default.description'));
 		$this->api->notifyUrl         = (isset($args['NotifyURL']) 		? $args['NotifyURL'] 		: $this->config->get('laravel-sisow::default.notifyurl'));
 		$this->api->returnUrl         = (isset($args['ReturnURL']) 		? $args['ReturnURL'] 		: $this->config->get('laravel-sisow::default.returnurl'));
 		$this->api->cancelUrl         = (isset($args['CancelURL']) 		? $args['CancelURL'] 		: $this->config->get('laravel-sisow::default.cancelurl'));
