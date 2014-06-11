@@ -60,6 +60,7 @@ class Sisow
 	 * May be overwritten with getBanks(true).
 	 *
 	 * @param  boolean  $testmode
+	 * @param  boolean  $outputArray
 	 * @return string
 	 */
 	public function getBanks( $testmode = null, $outputArray = false ) {
@@ -84,9 +85,9 @@ class Sisow
 	 */
 	public function getPaymentURL( $args = NULL ) {
 
-		$this->api->purchaseId        = $args['PurchaseID'];
-		$this->api->amount            = $args['Amount'];
-		$this->api->issuerId          = $args['IssuerID'];
+		$this->api->purchaseId        = $args['purchase_id'];
+		$this->api->amount            = $args['amount'];
+		$this->api->issuerId          = $args['issuer_id'];
 
 		$this->api->testmode          = $this->testmode;
 		$this->api->description       = (isset($args['Description']) 	? $args['Description'] 		: $this->config->get('laravel-sisow::default.description'));
