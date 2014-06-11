@@ -62,13 +62,13 @@ class Sisow
 	 * @param  boolean  $testmode
 	 * @return string
 	 */
-	public function getBanks( $testmode = null ) {
+	public function getBanks( $testmode = null, $outputArray = false ) {
 
 		if(isset($testmode)) {
 			$this->testmode = $testmode;
 		}
 
-		$this->api->DirectoryRequest($output, true, $this->testmode);
+		$this->api->DirectoryRequest($output, ! $outputArray, $this->testmode);
 
 		return $output;
 
